@@ -46,15 +46,15 @@ const DESIGNS = [
     audience: "Brand îndrăzneț, activ pe Instagram, care vrea spectacol",
   },
   {
-    id: "storybook",
-    name: "Storybook",
-    vibe: "Carte ilustrată · stickere · hârtie",
-    path: "designs/03-storybook/index.html",
-    desc: "O carte cu capitole: hârtie texturată, stickere cu contur negru, polaroide cu bandă adezivă, benzi desenate pentru „o zi la salon”. Serviciile sunt stickere care se întorc, iar o potecă de lăbuțe se desenează pe măsură ce derulezi, cu un cățel galben care merge pe ea până la finalul poveștii.",
-    tags: ["Rubik & Kalam", "Crem, roșu, muștar, teal", "Potecă de lăbuțe", "Stickere flip"],
-    swatches: ["#fbf3e4", "#e5533d", "#2b8a86"],
+    id: "barbershop",
+    name: "Barbershop",
+    vibe: "Frizerie vintage · verde-sticlă & alamă",
+    path: "designs/03-barbershop/index.html",
+    desc: "Frizeria din colț, pentru animale: firmă de lemn care se leagănă pe lanțuri, stâlp de frizerie rotitor, neon „DESCHIS” care pâlpâie, meniu pe tablă de cretă ale cărui rânduri se scriu singure când apar, oglindă cu ramă de alamă pentru înainte/după, cabină foto cu benzi de fotografii, bilet de programare care se rupe la apăsare și o carte de oaspeți scrisă de mână.",
+    tags: ["Alfa Slab One & Caveat", "Verde, crem, alamă", "Tablă de cretă", "Bilet care se rupe"],
+    swatches: ["#123b2f", "#c9a24a", "#f6efe1"],
     motion: 4, warmth: 5, density: 4,
-    audience: "Salon prietenos, cu personalitate, memorabil pentru copii și părinți",
+    audience: "Salon cu caracter, cald și de încredere, cu umor vintage",
   },
 ];
 
