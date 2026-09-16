@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pet Expert — Bubbles</title>
+<meta name="description" content="Pet Expert: salon de frezură pentru câini, pisici și iepuri în Chișinău, str. Muncești 94. Groomeri certificați. Programează-te la 076 666 466.">
+<meta name="theme-color" content="#dff1ff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas class="bubbles" id="bubbles" aria-hidden="true"></canvas>
+
+<header class="top">
+  <a class="brand" href="#" aria-label="Pet Expert, acasă"><span class="brand__paw" aria-hidden="true"></span>Pet Expert</a>
+  <nav class="top__nav" aria-label="Meniu principal"><a href="#servicii">Servicii</a><a href="#transformare">Înainte / după</a><a href="#galerie">Galerie</a><a href="#pareri">Păreri</a><a href="#info">Info</a></nav>
+  <a class="btn btn--primary top__cta" data-wa href="#" target="_blank" rel="noopener">Programează-te</a>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__text">
+      <h1 class="hero__title" id="hero-title">Baie, tuns și multă răbdare.</h1>
+      <p class="hero__sub">Salon de frezură pentru câini, pisici și iepuri, cu groomeri certificați. Str. Muncești 94, Chișinău.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary btn--lg" data-wa href="#" target="_blank" rel="noopener">Programează-te pe WhatsApp</a>
+        <a class="btn btn--ghost btn--lg" data-tel href="#">Sună: <span data-brand="phone"></span></a>
+      </div>
+      <ul class="hero__facts" id="hero-facts"></ul>
+    </div>
+    <div class="tub">
+      <div class="tub__water"></div>
+      <figure class="tub__photo"><img data-photo="Cover" src="../../shared/photos/hero.jpg" alt="Samoyed alb, pufos, după frezură completă" width="800" height="1000" fetchpriority="high"></figure>
+      <svg class="tub__foam" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 Q 25 10 50 40 T 100 40 T 150 40 T 200 40 T 250 40 T 300 40 T 350 40 T 400 40 V 60 H 0 Z" fill="#fff"/></svg>
+      <span class="tub__badge">12.7k urmăritori</span>
+    </div>
+  </section>
+
+  <div class="wave" aria-hidden="true"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path class="wave__p wave__p--a" d="M0 40 C 240 80 480 0 720 40 S 1200 80 1440 40 V 80 H 0 Z"/><path class="wave__p wave__p--b" d="M0 50 C 240 10 480 90 720 50 S 1200 10 1440 50 V 80 H 0 Z"/></svg></div>
+
+  <!-- ALEGE PRIETENUL -->
+  <section class="pick" id="servicii">
+    <div class="wrap">
+      <h2 class="h2">Cine vine la <em>băiță</em>?</h2>
+      <div class="pick__row" id="pick" role="tablist" aria-label="Animalul"></div>
+      <p class="pick__text" id="pick-text"></p>
+    </div>
+    <div class="wrap soaps" id="services"></div>
+  </section>
+
+  <!-- ÎNAINTE / DUPĂ (squeegee) -->
+  <section class="squeegee" id="transformare">
+    <div class="wrap">
+      <h2 class="h2">Șterge spuma și vezi <em>rezultatul</em></h2>
+      <p class="sub">Trage racleta de la stânga la dreapta. Sub spumă: același prieten, după frezura completă.</p>
+    </div>
+    <div class="wrap">
+      <div class="sq" id="sq">
+        <img class="sq__after" data-photo="După" src="../../shared/photos/post-01.jpg" alt="Corgi după frezură completă" width="1200" height="900" loading="lazy">
+        <div class="sq__before" id="sq-before"><img data-photo="Înainte" src="../../shared/photos/post-04.jpg" alt="Golden Retriever înainte de frezură" width="1200" height="900" loading="lazy"><div class="sq__foam"></div></div>
+        <input class="sq__range" id="sq-range" type="range" min="0" max="100" value="55" aria-label="Poziția racletei">
+        <div class="sq__tool" aria-hidden="true"><i></i></div>
+        <span class="sq__tag sq__tag--l" aria-hidden="true">Înainte</span><span class="sq__tag sq__tag--r" aria-hidden="true">După</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wave wave--flip" aria-hidden="true"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path class="wave__p wave__p--a" d="M0 40 C 240 80 480 0 720 40 S 1200 80 1440 40 V 80 H 0 Z"/><path class="wave__p wave__p--b" d="M0 50 C 240 10 480 90 720 50 S 1200 10 1440 50 V 80 H 0 Z"/></svg></div>
+
+  <!-- GALERIE -->
+  <section class="gallery" id="galerie">
+    <div class="wrap gallery__head"><h2 class="h2">Proaspăt <em>spălați</em></h2><a class="btn btn--ghost" data-ig href="#" target="_blank" rel="noopener">Instagram ↗</a></div>
+    <div class="gallery__row" id="gallery" tabindex="0" aria-label="Galerie, derulează orizontal"></div>
+  </section>
+
+  <!-- CUM DECURGE -->
+  <section class="steps">
+    <div class="wrap">
+      <h2 class="h2">O vizită, <em>pas cu pas</em></h2>
+      <ol class="steps__list" id="process"></ol>
+    </div>
+  </section>
+
+  <!-- PĂRERI -->
+  <section class="chat" id="pareri">
+    <div class="wrap">
+      <h2 class="h2">Stăpânii <em>ne scriu</em></h2>
+      <div class="chat__list" id="quotes"></div>
+    </div>
+  </section>
+
+  <!-- ECHIPA + CIFRE -->
+  <section class="team">
+    <div class="wrap team__grid">
+      <figure class="team__photo"><img data-photo="Echipa" src="../../shared/photos/portrait.jpg" alt="Om și husky, prieteni" width="800" height="1000" loading="lazy"></figure>
+      <div class="team__text">
+        <h2 class="h2">Echipa <em>Pet Expert</em></h2>
+        <p class="team__role" data-founder="role"></p>
+        <div id="story"></div>
+        <ul class="stats" id="stats"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section class="info" id="info">
+    <div class="wrap">
+      <h2 class="h2">Bine de <em>știut</em></h2>
+      <div class="tabs" id="tabs" role="tablist"></div>
+      <div class="acc is-on" id="faq" role="tabpanel"></div>
+      <div class="acc" id="care" role="tabpanel"></div>
+      <div class="acc" id="policies" role="tabpanel"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap contact__card">
+      <svg class="contact__foam" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q 20 5 40 30 T 80 30 T 120 30 T 160 30 T 200 30 T 240 30 T 280 30 T 320 30 T 360 30 T 400 30 V 40 H 0 Z" fill="#eaf6ff"/></svg>
+      <h2 class="contact__title">Hai la <em>băiță!</em></h2>
+      <p>Programări telefonic sau pe mesaj. Spune-ne rasa, talia și ce tunsoare vrei.</p>
+      <div class="contact__cta">
+        <a class="btn btn--light btn--lg" data-wa href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--light btn--lg" data-tel href="#"><span data-brand="phone"></span></a>
+        <a class="btn btn--outline btn--lg" data-ig href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <div class="contact__grid">
+        <div><b>Adresă</b><a data-maps href="#" target="_blank" rel="noopener" data-brand="address"></a></div>
+        <div><b>Program</b><div id="schedule"></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><span>© <span id="year"></span> Pet Expert · <a data-site href="#" target="_blank" rel="noopener">petexpert.md</a></span><span>Site realizat de <a href="https://github.com/brixwave-technology" target="_blank" rel="noopener">Brixwave</a></span></footer>
+
+<nav class="dock" aria-label="Acțiuni rapide"><a class="dock__main" data-wa href="#" target="_blank" rel="noopener">WhatsApp · programare</a><a data-tel href="#">Sună</a></nav>
+
+<script src="../../shared/petexpert-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

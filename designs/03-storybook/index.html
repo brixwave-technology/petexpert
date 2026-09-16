@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pet Expert — Storybook</title>
+<meta name="description" content="Pet Expert: salon de frezură pentru câini, pisici și iepuri în Chișinău, str. Muncești 94. Groomeri certificați. Programează-te la 076 666 466.">
+<meta name="theme-color" content="#fbf3e4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="paper" aria-hidden="true"></div>
+<svg class="trail" id="trail" aria-hidden="true" preserveAspectRatio="none"><path id="trail-path" d="" /><g id="trail-paws"></g><g id="walker" class="walker"><circle r="26" fill="#f3b53d"/><circle cx="-9" cy="-4" r="3" fill="#2a2622"/><circle cx="9" cy="-4" r="3" fill="#2a2622"/><ellipse cy="8" rx="5" ry="3.5" fill="#2a2622"/><ellipse cx="-22" cy="-8" rx="9" ry="14" fill="#e5533d"/><ellipse cx="22" cy="-8" rx="9" ry="14" fill="#e5533d"/></g></svg>
+
+<header class="top">
+  <a class="brand" href="#" aria-label="Pet Expert, acasă"><span class="sticker sticker--tiny">Pet Expert</span></a>
+  <nav class="top__nav" aria-label="Meniu principal"><a href="#servicii">Servicii</a><a href="#album">Album</a><a href="#ziua">O zi la salon</a><a href="#pareri">Păreri</a><a href="#info">Info</a></nav>
+  <a class="btn btn--red top__cta" data-wa href="#" target="_blank" rel="noopener">Programează-te</a>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__text">
+      <p class="hand hero__hand">capitolul 1</p>
+      <h1 class="hero__title">Povestea unui <span class="ul">prieten pufos</span> începe la Pet Expert.</h1>
+      <p class="hero__sub">Salon de frezură pentru câini, pisici și iepuri. Groomeri certificați, pe strada Muncești 94, Chișinău.</p>
+      <div class="hero__cta">
+        <a class="btn btn--red btn--lg" data-wa href="#" target="_blank" rel="noopener">Programează-te</a>
+        <a class="btn btn--paper btn--lg" data-tel href="#">Sună: <span data-brand="phone"></span></a>
+      </div>
+    </div>
+    <div class="hero__art">
+      <figure class="polaroid polaroid--hero"><img data-photo="Cover" src="../../shared/photos/hero.jpg" alt="Samoyed alb, pufos, după frezură completă" width="800" height="1000" fetchpriority="high"><figcaption class="hand">după frezura completă ♡</figcaption></figure>
+      <span class="sticker sticker--yellow sticker--a">12.7k urmăritori</span>
+      <span class="sticker sticker--teal sticker--b">câini · pisici · iepuri</span>
+      <span class="sticker sticker--red sticker--c">groomeri certificați</span>
+    </div>
+  </section>
+
+  <!-- STICKER SHEET: servicii -->
+  <section class="sheet" id="servicii">
+    <div class="wrap"><p class="hand">capitolul 2</p><h2 class="h2">Foaia cu <span class="ul ul--yellow">stickere</span></h2><p class="sub">Alege un serviciu ca pe un sticker. Apasă și îl întorci ca să vezi ce include.</p></div>
+    <div class="wrap sheet__grid" id="services"></div>
+  </section>
+
+  <!-- ALBUM -->
+  <section class="album" id="album">
+    <div class="wrap"><p class="hand">capitolul 3</p><h2 class="h2">Albumul cu <span class="ul ul--teal">prieteni</span></h2></div>
+    <div class="wrap album__grid" id="gallery"></div>
+    <div class="wrap album__more"><a class="btn btn--paper" data-ig href="#" target="_blank" rel="noopener">Mai multe pe Instagram ↗</a></div>
+  </section>
+
+  <!-- COMIC STRIP -->
+  <section class="comic" id="ziua">
+    <div class="wrap"><p class="hand">capitolul 4</p><h2 class="h2">O zi la <span class="ul">salon</span></h2></div>
+    <ol class="wrap comic__strip" id="process"></ol>
+  </section>
+
+  <!-- PĂRERI polaroids -->
+  <section class="wallp" id="pareri">
+    <div class="wrap"><p class="hand">capitolul 5</p><h2 class="h2">Scrisori de la <span class="ul ul--yellow">stăpâni</span></h2></div>
+    <div class="wrap wallp__grid" id="quotes"></div>
+  </section>
+
+  <!-- ECHIPA -->
+  <section class="team">
+    <div class="wrap team__grid">
+      <figure class="polaroid polaroid--team"><img data-photo="Echipa" src="../../shared/photos/portrait.jpg" alt="Om și husky, prieteni" width="800" height="1000" loading="lazy"><figcaption class="hand">echipa & prietenii</figcaption></figure>
+      <div>
+        <p class="hand">capitolul 6</p><h2 class="h2">Cine suntem</h2>
+        <p class="team__role" data-founder="role"></p>
+        <div id="story"></div>
+        <ul class="stats" id="stats"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section class="info" id="info">
+    <div class="wrap"><p class="hand">anexă</p><h2 class="h2">Bine de știut</h2></div>
+    <div class="wrap tabs" id="tabs" role="tablist"></div>
+    <div class="wrap acc is-on" id="faq" role="tabpanel"></div>
+    <div class="wrap acc" id="care" role="tabpanel"></div>
+    <div class="wrap acc" id="policies" role="tabpanel"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="end" id="contact">
+    <div class="wrap end__card">
+      <svg class="arrow" viewBox="0 0 120 80" aria-hidden="true"><path d="M8 10 C 30 70, 70 70, 105 30" fill="none" stroke="#e5533d" stroke-width="4" stroke-linecap="round" pathLength="1"/><path d="M92 26 L 106 29 L 100 43" fill="none" stroke="#e5533d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" pathLength="1"/></svg>
+      <p class="hand end__hand">sfârșit… sau începutul poveștii voastre</p>
+      <h2 class="end__title">Hai la <span class="ul ul--yellow">Pet Expert!</span></h2>
+      <div class="end__cta">
+        <a class="btn btn--red btn--lg" data-wa href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--teal btn--lg" data-tel href="#"><span data-brand="phone"></span></a>
+        <a class="btn btn--paper btn--lg" data-ig href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <div class="end__grid">
+        <div><b>Adresă</b><a data-maps href="#" target="_blank" rel="noopener" data-brand="address"></a></div>
+        <div><b>Program</b><div id="schedule"></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><span>© <span id="year"></span> Pet Expert · <a data-site href="#" target="_blank" rel="noopener">petexpert.md</a></span><span>Site realizat de <a href="https://github.com/brixwave-technology" target="_blank" rel="noopener">Brixwave</a></span></footer>
+<nav class="dock" aria-label="Acțiuni rapide"><a class="dock__main" data-wa href="#" target="_blank" rel="noopener">WhatsApp · programare</a><a data-tel href="#">Sună</a></nav>
+
+<script src="../../shared/petexpert-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
