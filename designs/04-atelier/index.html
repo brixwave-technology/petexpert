@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pet Expert — Atelier</title>
+<meta name="description" content="Pet Expert: salon de frezură pentru câini, pisici și iepuri în Chișinău, str. Muncești 94. Groomeri certificați. Programează-te la 076 666 466.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor-img" id="cursor-img" aria-hidden="true"><img alt=""></div>
+
+<header class="top">
+  <a class="brand" href="#" aria-label="Pet Expert, acasă">Pet <em>Expert</em></a>
+  <nav class="top__nav" aria-label="Meniu principal"><a href="#servicii">Servicii</a><a href="#lookbook">Lookbook</a><a href="#filosofie">Filosofie</a><a href="#pareri">Păreri</a><a href="#info">Info</a></nav>
+  <a class="btn top__cta" data-wa href="#" target="_blank" rel="noopener" data-magnetic>Programare</a>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__text">
+      <p class="eyebrow-free hero__small">Salon de frezură · Chișinău</p>
+      <h1 class="hero__title"><span class="lm"><span>Îngrijire</span></span><span class="lm"><span><em>cu tact,</em></span></span><span class="lm"><span>pentru prieteni.</span></span></h1>
+      <p class="hero__sub">Câini, pisici și iepuri, tunși și spălați cu răbdare de groomeri certificați. Str. Muncești 94.</p>
+      <div class="hero__cta">
+        <a class="btn btn--dark btn--lg" data-wa href="#" target="_blank" rel="noopener" data-magnetic>Programează o vizită</a>
+        <a class="link" data-tel href="#">Sună <span data-brand="phone"></span></a>
+      </div>
+    </div>
+    <figure class="hero__img mask" data-mask><img data-photo="Cover" src="../../shared/photos/hero.jpg" alt="Samoyed alb, pufos, după frezură completă" width="800" height="1000" fetchpriority="high"></figure>
+    <div class="hero__scroll" aria-hidden="true"><span>Derulează</span><i></i></div>
+  </section>
+
+  <!-- SERVICII -->
+  <section class="services" id="servicii">
+    <div class="wrap">
+      <h2 class="h2 draw">Servicii</h2>
+      <ol class="list" id="services"></ol>
+    </div>
+  </section>
+
+  <!-- LOOKBOOK -->
+  <section class="lookbook" id="lookbook">
+    <div class="wrap lookbook__head"><h2 class="h2 draw">Lookbook</h2><span class="lookbook__count" id="lb-count">01 / 12</span></div>
+    <div class="lookbook__row" id="gallery" tabindex="0" aria-label="Lookbook, derulează orizontal"></div>
+    <div class="wrap"><div class="lookbook__bar"><i id="lb-bar"></i></div></div>
+  </section>
+
+  <!-- ÎNAINTE / DUPĂ -->
+  <section class="reveal-ba">
+    <div class="wrap ba__grid">
+      <div class="ba__text"><h2 class="h2 draw">Înainte <em>și</em> după</h2><p class="sub">Ține apăsat pe imagine sau pe buton pentru a vedea cum a venit. Eliberează pentru rezultat.</p><button class="hold" id="hold" type="button" aria-pressed="false"><i></i>Ține apăsat</button></div>
+      <figure class="ba mask" id="ba" data-mask>
+        <img class="ba__after" data-photo="După" src="../../shared/photos/post-01.jpg" alt="Corgi după frezură completă" width="800" height="1000" loading="lazy">
+        <img class="ba__before" data-photo="Înainte" src="../../shared/photos/post-04.jpg" alt="Golden Retriever înainte de frezură" width="800" height="1000" loading="lazy">
+        <figcaption id="ba-label">După</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FILOSOFIE -->
+  <section class="phil" id="filosofie">
+    <div class="wrap">
+      <h2 class="h2 draw">Filosofia <em>atelierului</em></h2>
+      <ol class="phil__list" id="values"></ol>
+    </div>
+  </section>
+
+  <!-- PROCES -->
+  <section class="steps">
+    <div class="wrap steps__grid">
+      <h2 class="h2 draw">O vizită,<br><em>pas cu pas</em></h2>
+      <ol class="steps__list" id="process"></ol>
+    </div>
+  </section>
+
+  <!-- ECHIPA -->
+  <section class="team">
+    <div class="wrap team__grid">
+      <figure class="team__img mask" data-mask><img data-photo="Echipa" src="../../shared/photos/portrait.jpg" alt="Om și husky, prieteni" width="800" height="1000" loading="lazy"></figure>
+      <div>
+        <h2 class="h2 draw">Echipa</h2>
+        <p class="team__role" data-founder="role"></p>
+        <div id="story"></div>
+        <ul class="creds" id="creds"></ul>
+        <ul class="stats" id="stats"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PĂRERI -->
+  <section class="quotes" id="pareri">
+    <div class="wrap">
+      <div class="quotes__stage" id="quotes"></div>
+      <div class="quotes__nav" id="qnav" role="tablist" aria-label="Alege părerea"></div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section class="info" id="info">
+    <div class="wrap info__grid">
+      <div><h2 class="h2 draw">Întrebări</h2><div class="acc" id="faq"></div></div>
+      <div><h2 class="h2 draw" id="care-title"></h2><div class="acc" id="care"></div><h2 class="h2 draw h2--sp" id="policies-title"></h2><div class="acc" id="policies"></div></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap contact__card">
+      <h2 class="contact__title"><span class="lm"><span>Vă așteptăm</span></span><span class="lm"><span><em>la atelier.</em></span></span></h2>
+      <div class="contact__cta">
+        <a class="btn btn--dark btn--lg" data-wa href="#" target="_blank" rel="noopener" data-magnetic>WhatsApp</a>
+        <a class="btn btn--lg" data-tel href="#" data-magnetic><span data-brand="phone"></span></a>
+        <a class="link" data-ig href="#" target="_blank" rel="noopener">Instagram ↗</a>
+      </div>
+      <dl class="contact__facts">
+        <div><dt>Adresă</dt><dd><a data-maps href="#" target="_blank" rel="noopener" data-brand="address"></a></dd></div>
+        <div><dt>Program</dt><dd id="schedule"></dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><span>© <span id="year"></span> Pet Expert · <a data-site href="#" target="_blank" rel="noopener">petexpert.md</a></span><span>Site realizat de <a href="https://github.com/brixwave-technology" target="_blank" rel="noopener">Brixwave</a></span></footer>
+<nav class="dock" aria-label="Acțiuni rapide"><a class="dock__main" data-wa href="#" target="_blank" rel="noopener">WhatsApp · programare</a><a data-tel href="#">Sună</a></nav>
+
+<script src="../../shared/petexpert-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

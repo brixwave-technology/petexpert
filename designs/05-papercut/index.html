@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pet Expert — Papercut</title>
+<meta name="description" content="Pet Expert: salon de frezură pentru câini, pisici și iepuri în Chișinău, str. Muncești 94. Groomeri certificați. Programează-te la 076 666 466.">
+<meta name="theme-color" content="#a8825b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layers" aria-hidden="true">
+  <i class="ly ly--1" data-speed="0.05"></i><i class="ly ly--2" data-speed="0.12"></i><i class="ly ly--3" data-speed="0.2"></i>
+  <svg class="ly ly--paw ly--paw-a" data-speed="0.15" viewBox="0 0 100 100"><ellipse cx="50" cy="62" rx="24" ry="20"/><circle cx="24" cy="36" r="10"/><circle cx="42" cy="22" r="10"/><circle cx="60" cy="22" r="10"/><circle cx="78" cy="36" r="10"/></svg>
+  <svg class="ly ly--paw ly--paw-b" data-speed="0.28" viewBox="0 0 100 100"><ellipse cx="50" cy="62" rx="24" ry="20"/><circle cx="24" cy="36" r="10"/><circle cx="42" cy="22" r="10"/><circle cx="60" cy="22" r="10"/><circle cx="78" cy="36" r="10"/></svg>
+</div>
+
+<header class="top">
+  <a class="brand" href="#" aria-label="Pet Expert, acasă"><span class="brand__cut">Pet Expert</span></a>
+  <nav class="top__nav" aria-label="Meniu principal"><a href="#servicii">Servicii</a><a href="#rupe">Rupe hârtia</a><a href="#galerie">Galerie</a><a href="#pareri">Păreri</a><a href="#info">Info</a></nav>
+  <a class="btn btn--brown top__cta" data-wa href="#" target="_blank" rel="noopener">Programează-te</a>
+</header>
+
+<main>
+  <!-- HERO: layered paper -->
+  <section class="hero sheet sheet--kraft">
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <h1 class="hero__title"><span class="cut cut--1">Blană</span> <span class="cut cut--2">curată,</span><br><span class="cut cut--3">inimă</span> <span class="cut cut--4">ușoară.</span></h1>
+        <p class="hero__sub">Salon de frezură pentru câini, pisici și iepuri. Groomeri certificați, pe strada Muncești 94, Chișinău.</p>
+        <div class="hero__cta">
+          <a class="btn btn--brown btn--lg" data-wa href="#" target="_blank" rel="noopener">Programează-te</a>
+          <a class="btn btn--paper btn--lg" data-tel href="#">Sună: <span data-brand="phone"></span></a>
+        </div>
+      </div>
+      <div class="hero__art">
+        <div class="circle circle--back" aria-hidden="true"></div>
+        <figure class="circle circle--photo"><img data-photo="Cover" src="../../shared/photos/hero.jpg" alt="Samoyed alb, pufos, după frezură completă" width="800" height="1000" fetchpriority="high"></figure>
+        <span class="tag tag--a"><b>12.7k</b> urmăritori</span>
+        <span class="tag tag--b">câini · pisici · iepuri</span>
+      </div>
+    </div>
+    <svg class="tear" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L40 8 L85 26 L130 10 L170 30 L220 12 L260 28 L310 6 L350 24 L400 14 L440 32 L490 10 L530 26 L580 8 L620 30 L670 12 L710 28 L760 6 L800 24 L850 14 L890 32 L940 10 L980 26 L1030 8 L1070 30 L1120 12 L1160 28 L1210 6 L1250 24 L1300 14 L1340 32 L1390 10 L1440 20 V40 H0 Z"/></svg>
+  </section>
+
+  <!-- SERVICII: cut cards with folded corner -->
+  <section class="sheet sheet--cream" id="servicii">
+    <div class="wrap">
+      <h2 class="h2">Decupate <span class="hl">pentru fiecare</span> prieten</h2>
+      <p class="sub">Atinge un card: colțul se îndoaie și apare descrierea. Prețul final se confirmă la evaluare.</p>
+      <div class="cards" id="services"></div>
+    </div>
+    <svg class="tear" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L40 8 L85 26 L130 10 L170 30 L220 12 L260 28 L310 6 L350 24 L400 14 L440 32 L490 10 L530 26 L580 8 L620 30 L670 12 L710 28 L760 6 L800 24 L850 14 L890 32 L940 10 L980 26 L1030 8 L1070 30 L1120 12 L1160 28 L1210 6 L1250 24 L1300 14 L1340 32 L1390 10 L1440 20 V40 H0 Z"/></svg>
+  </section>
+
+  <!-- RUPE HÂRTIA: torn-edge before/after -->
+  <section class="sheet sheet--white" id="rupe">
+    <div class="wrap">
+      <h2 class="h2">Rupe hârtia și vezi <span class="hl">rezultatul</span></h2>
+      <p class="sub">Trage marginea ruptă spre dreapta: sub foaia veche se ascunde frezura nouă.</p>
+      <div class="rip" id="rip">
+        <img class="rip__after" data-photo="După" src="../../shared/photos/post-01.jpg" alt="Corgi după frezură completă" width="1200" height="900" loading="lazy">
+        <div class="rip__before" id="rip-before"><img data-photo="Înainte" src="../../shared/photos/post-04.jpg" alt="Golden Retriever înainte de frezură" width="1200" height="900" loading="lazy"><svg class="rip__edge" viewBox="0 0 40 900" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H22 L36 30 L18 60 L34 100 L14 140 L32 180 L16 220 L38 260 L20 300 L30 340 L12 380 L34 420 L18 460 L36 500 L16 540 L30 580 L14 620 L34 660 L18 700 L36 740 L20 780 L32 820 L16 860 L26 900 H0 Z"/></svg></div>
+        <input class="rip__range" id="rip-range" type="range" min="0" max="100" value="50" aria-label="Poziția rupturii">
+        <span class="rip__tag rip__tag--l" aria-hidden="true">Înainte</span><span class="rip__tag rip__tag--r" aria-hidden="true">După</span>
+      </div>
+    </div>
+    <svg class="tear" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L40 8 L85 26 L130 10 L170 30 L220 12 L260 28 L310 6 L350 24 L400 14 L440 32 L490 10 L530 26 L580 8 L620 30 L670 12 L710 28 L760 6 L800 24 L850 14 L890 32 L940 10 L980 26 L1030 8 L1070 30 L1120 12 L1160 28 L1210 6 L1250 24 L1300 14 L1340 32 L1390 10 L1440 20 V40 H0 Z"/></svg>
+  </section>
+
+  <!-- GALERIE: paper frames -->
+  <section class="sheet sheet--kraft" id="galerie">
+    <div class="wrap gal__head"><h2 class="h2">Galeria <span class="hl hl--white">de hârtie</span></h2><a class="btn btn--paper" data-ig href="#" target="_blank" rel="noopener">Instagram ↗</a></div>
+    <div class="wrap frames" id="gallery"></div>
+    <svg class="tear" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L40 8 L85 26 L130 10 L170 30 L220 12 L260 28 L310 6 L350 24 L400 14 L440 32 L490 10 L530 26 L580 8 L620 30 L670 12 L710 28 L760 6 L800 24 L850 14 L890 32 L940 10 L980 26 L1030 8 L1070 30 L1120 12 L1160 28 L1210 6 L1250 24 L1300 14 L1340 32 L1390 10 L1440 20 V40 H0 Z"/></svg>
+  </section>
+
+  <!-- PROCES: paper chain -->
+  <section class="sheet sheet--cream">
+    <div class="wrap">
+      <h2 class="h2">Lanțul de hârtie al <span class="hl">unei vizite</span></h2>
+      <ol class="chain" id="process"></ol>
+    </div>
+    <svg class="tear" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L40 8 L85 26 L130 10 L170 30 L220 12 L260 28 L310 6 L350 24 L400 14 L440 32 L490 10 L530 26 L580 8 L620 30 L670 12 L710 28 L760 6 L800 24 L850 14 L890 32 L940 10 L980 26 L1030 8 L1070 30 L1120 12 L1160 28 L1210 6 L1250 24 L1300 14 L1340 32 L1390 10 L1440 20 V40 H0 Z"/></svg>
+  </section>
+
+  <!-- PĂRERI: torn notes -->
+  <section class="sheet sheet--white" id="pareri">
+    <div class="wrap">
+      <h2 class="h2">Bilețele de la <span class="hl">stăpâni</span></h2>
+      <div class="notes" id="quotes"></div>
+    </div>
+    <svg class="tear" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L40 8 L85 26 L130 10 L170 30 L220 12 L260 28 L310 6 L350 24 L400 14 L440 32 L490 10 L530 26 L580 8 L620 30 L670 12 L710 28 L760 6 L800 24 L850 14 L890 32 L940 10 L980 26 L1030 8 L1070 30 L1120 12 L1160 28 L1210 6 L1250 24 L1300 14 L1340 32 L1390 10 L1440 20 V40 H0 Z"/></svg>
+  </section>
+
+  <!-- ECHIPA -->
+  <section class="sheet sheet--kraft">
+    <div class="wrap team__grid">
+      <figure class="circle circle--team"><img data-photo="Echipa" src="../../shared/photos/portrait.jpg" alt="Om și husky, prieteni" width="800" height="1000" loading="lazy"></figure>
+      <div>
+        <h2 class="h2">Echipa <span class="hl hl--white">Pet Expert</span></h2>
+        <p class="team__role" data-founder="role"></p>
+        <div id="story"></div>
+        <ul class="stats" id="stats"></ul>
+      </div>
+    </div>
+    <svg class="tear" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L40 8 L85 26 L130 10 L170 30 L220 12 L260 28 L310 6 L350 24 L400 14 L440 32 L490 10 L530 26 L580 8 L620 30 L670 12 L710 28 L760 6 L800 24 L850 14 L890 32 L940 10 L980 26 L1030 8 L1070 30 L1120 12 L1160 28 L1210 6 L1250 24 L1300 14 L1340 32 L1390 10 L1440 20 V40 H0 Z"/></svg>
+  </section>
+
+  <!-- INFO -->
+  <section class="sheet sheet--cream" id="info">
+    <div class="wrap">
+      <h2 class="h2">Bine de <span class="hl">știut</span></h2>
+      <div class="tabs" id="tabs" role="tablist"></div>
+      <div class="acc is-on" id="faq" role="tabpanel"></div>
+      <div class="acc" id="care" role="tabpanel"></div>
+      <div class="acc" id="policies" role="tabpanel"></div>
+    </div>
+    <svg class="tear" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L40 8 L85 26 L130 10 L170 30 L220 12 L260 28 L310 6 L350 24 L400 14 L440 32 L490 10 L530 26 L580 8 L620 30 L670 12 L710 28 L760 6 L800 24 L850 14 L890 32 L940 10 L980 26 L1030 8 L1070 30 L1120 12 L1160 28 L1210 6 L1250 24 L1300 14 L1340 32 L1390 10 L1440 20 V40 H0 Z"/></svg>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="sheet sheet--brown" id="contact">
+    <div class="wrap contact">
+      <h2 class="contact__title">Hai să ne <span class="hl hl--cream">cunoaștem!</span></h2>
+      <p class="contact__sub">Un mesaj și confirmăm ora. Spune-ne rasa, talia și ce tunsoare vrei.</p>
+      <div class="contact__cta">
+        <a class="btn btn--paper btn--lg" data-wa href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--paper btn--lg" data-tel href="#"><span data-brand="phone"></span></a>
+        <a class="btn btn--outline btn--lg" data-ig href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <div class="contact__grid">
+        <div><b>Adresă</b><a data-maps href="#" target="_blank" rel="noopener" data-brand="address"></a></div>
+        <div><b>Program</b><div id="schedule"></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><span>© <span id="year"></span> Pet Expert · <a data-site href="#" target="_blank" rel="noopener">petexpert.md</a></span><span>Site realizat de <a href="https://github.com/brixwave-technology" target="_blank" rel="noopener">Brixwave</a></span></footer>
+<nav class="dock" aria-label="Acțiuni rapide"><a class="dock__main" data-wa href="#" target="_blank" rel="noopener">WhatsApp · programare</a><a data-tel href="#">Sună</a></nav>
+
+<script src="../../shared/petexpert-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

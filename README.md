@@ -13,7 +13,7 @@ shared/                    ← date comune + fotografii
 .github/workflows/pages.yml← publicare automată pe GitHub Pages (Settings → Pages → GitHub Actions)
 ```
 
-Design-uri: `01-bubbles` (baie & spumă, bule pe canvas, racletă înainte/după), `02-runway` (podium de modă, cortină la scroll, cărți de juriu), `03-barbershop` (frizerie vintage: neon, stâlp rotitor, tablă de cretă, bilet care se rupe).
+Design-uri (toate pe paleta logo-ului: crem, maro, alb): `01-bubbles` (baie & spumă, bule pe canvas, racletă înainte/după), `02-runway` (podium de modă, cortină la scroll, cărți de juriu), `03-barbershop` (frizerie vintage: neon, stâlp rotitor, tablă de cretă, bilet care se rupe), `04-atelier` (boutique lux discret), `05-papercut` (hârtie în straturi, parallax), `06-pasaport` (bento + pașaport cu ștampile, status live).
 Datele salonului (servicii, prețuri orientative, program, contact, FAQ) sunt în `shared/petexpert-data.js`;
 ilustrațiile demonstrative se generează cu `python3 scripts/generate-photos.py` și se înlocuiesc cu poze reale
 păstrând numele fișierelor din `shared/photos/`.

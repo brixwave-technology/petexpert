@@ -69,7 +69,7 @@
   $("#care-title").textContent = D.aftercare.title; $("#policies-title").textContent = D.policies.title;
   document.addEventListener("click", (e) => { const b = e.target.closest(".ai button"); if (b) { const o = b.parentElement.classList.toggle("is-open"); b.setAttribute("aria-expanded", o); } });
 
-  U.bindPlaceholders("#241f2b", "#3a2f45", "#ffe14d");
+  U.bindPlaceholders("#3a291c", "#5a4130", "#e8c47c");
 
   /* reveals */
   const io = new IntersectionObserver((es) => es.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); } }), { threshold: 0.1 });

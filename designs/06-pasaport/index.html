@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pet Expert — Pașaport</title>
+<meta name="description" content="Pet Expert: salon de frezură pentru câini, pisici și iepuri în Chișinău, str. Muncești 94. Groomeri certificați. Programează-te la 076 666 466.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#" aria-label="Pet Expert, acasă"><i class="brand__dot"></i>Pet Expert</a>
+  <span class="live" id="live"><i></i><span id="live-text">…</span></span>
+  <a class="btn btn--brown top__cta" data-wa href="#" target="_blank" rel="noopener">Programează-te</a>
+</header>
+
+<main class="bento">
+  <!-- HERO tile -->
+  <section class="tile tile--hero t-in">
+    <p class="mono">Salon de frezură · Chișinău · Muncești 94</p>
+    <h1 class="hero__title">Pașaportul prietenului tău, <em>cu ștampile de la Pet Expert.</em></h1>
+    <p class="hero__sub">Câini, pisici și iepuri, îngrijiți de groomeri certificați. Completează pașaportul de mai jos și trimite-l pe WhatsApp: noi confirmăm ora.</p>
+    <div class="hero__cta"><a class="btn btn--brown btn--lg" href="#pasaport">Completează pașaportul</a><a class="btn btn--lg" data-tel href="#">Sună: <span data-brand="phone"></span></a></div>
+  </section>
+  <figure class="tile tile--photo tile--photo-hero t-in"><img data-photo="Cover" src="../../shared/photos/hero.jpg" alt="Samoyed alb, pufos, după frezură completă" width="800" height="1000" fetchpriority="high"><figcaption class="mono">Samoyed · frezură completă</figcaption></figure>
+
+  <!-- STATS tiles -->
+  <ul class="tile tile--stats t-in" id="stats"></ul>
+
+  <!-- PASSPORT -->
+  <section class="tile tile--passport t-in" id="pasaport">
+    <div class="pass">
+      <div class="pass__cover" id="pass-cover"><div class="pass__crest" aria-hidden="true"><svg viewBox="0 0 100 100"><ellipse cx="50" cy="62" rx="24" ry="20"/><circle cx="24" cy="36" r="10"/><circle cx="42" cy="22" r="10"/><circle cx="60" cy="22" r="10"/><circle cx="78" cy="36" r="10"/></svg></div><p class="pass__ctitle">Pașaport de grooming</p><p class="mono pass__cno">Pet Expert · Chișinău</p><button class="btn btn--cream" id="pass-open" type="button">Deschide pașaportul</button></div>
+      <div class="pass__page">
+        <div class="pass__head"><span class="mono">PET EXPERT · PAȘAPORT DE GROOMING</span><span class="mono" id="pass-date"></span></div>
+        <div class="pass__row"><span class="pass__label mono">1. Prietenul</span><div class="opts" id="opt-species"></div></div>
+        <div class="pass__row" id="row-size"><span class="pass__label mono">2. Talia</span><div class="opts" id="opt-size"></div></div>
+        <div class="pass__row"><span class="pass__label mono">3. Blana</span><div class="opts" id="opt-coat"></div></div>
+        <div class="pass__row"><span class="pass__label mono">4. Serviciul</span><div class="opts opts--wide" id="opt-service"></div></div>
+        <div class="pass__stamps" id="stamps" aria-live="polite"></div>
+        <div class="pass__total"><div><span class="mono">Estimare</span><b id="pass-price">—</b></div><div><span class="mono">Durată</span><b id="pass-dur">—</b></div></div>
+        <a class="btn btn--brown btn--lg pass__go" id="pass-go" href="#" target="_blank" rel="noopener">Ștampilează și trimite pe WhatsApp</a>
+        <p class="mono pass__note">Prețul final se confirmă la evaluare, după talie și starea blănii.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES tile -->
+  <section class="tile tile--services t-in" id="servicii">
+    <h2 class="h2">Servicii</h2>
+    <ul class="svc" id="services"></ul>
+  </section>
+
+  <!-- PHOTO tiles -->
+  <figure class="tile tile--photo t-in" id="photo-a"></figure>
+  <figure class="tile tile--photo t-in" id="photo-b"></figure>
+
+  <!-- SCHEDULE tile -->
+  <section class="tile tile--schedule t-in">
+    <h2 class="h2">Program</h2>
+    <div id="schedule"></div>
+    <p class="mono" id="next-open"></p>
+  </section>
+
+  <!-- LOCATION tile -->
+  <section class="tile tile--map t-in">
+    <h2 class="h2">Unde</h2>
+    <p class="map__addr" data-brand="address"></p>
+    <div class="map__art" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+    <a class="btn" data-maps href="#" target="_blank" rel="noopener">Deschide în Maps</a>
+  </section>
+
+  <!-- QUOTES tile -->
+  <section class="tile tile--quotes t-in" id="pareri">
+    <h2 class="h2">Păreri</h2>
+    <div class="q__stage" id="quotes"></div>
+    <div class="q__nav" id="qnav"></div>
+  </section>
+
+  <!-- GALLERY tile -->
+  <section class="tile tile--gallery t-in" id="galerie">
+    <div class="tile__head"><h2 class="h2">Galerie</h2><a class="link" data-ig href="#" target="_blank" rel="noopener">Instagram ↗</a></div>
+    <div class="gal" id="gallery"></div>
+  </section>
+
+  <!-- TEAM tile -->
+  <section class="tile tile--team t-in">
+    <figure class="team__img"><img data-photo="Echipa" src="../../shared/photos/portrait.jpg" alt="Om și husky, prieteni" width="800" height="1000" loading="lazy"></figure>
+    <div><h2 class="h2">Echipa</h2><p class="mono" data-founder="role"></p><div id="story"></div><ul class="creds" id="creds"></ul></div>
+  </section>
+
+  <!-- PROCESS tile -->
+  <section class="tile tile--process t-in"><h2 class="h2">Cum decurge</h2><ol class="proc" id="process"></ol></section>
+
+  <!-- INFO tile -->
+  <section class="tile tile--info t-in" id="info">
+    <h2 class="h2">Bine de știut</h2>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="acc is-on" id="faq" role="tabpanel"></div><div class="acc" id="care" role="tabpanel"></div><div class="acc" id="policies" role="tabpanel"></div>
+  </section>
+
+  <!-- CONTACT tile -->
+  <section class="tile tile--contact t-in" id="contact">
+    <h2 class="contact__title">Te așteptăm. <em>Cu ștampila gata.</em></h2>
+    <div class="hero__cta"><a class="btn btn--cream btn--lg" data-wa href="#" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--outline btn--lg" data-tel href="#"><span data-brand="phone"></span></a><a class="btn btn--outline btn--lg" data-ig href="#" target="_blank" rel="noopener">Instagram</a></div>
+  </section>
+</main>
+
+<footer class="foot"><span>© <span id="year"></span> Pet Expert · <a data-site href="#" target="_blank" rel="noopener">petexpert.md</a></span><span>Site realizat de <a href="https://github.com/brixwave-technology" target="_blank" rel="noopener">Brixwave</a></span></footer>
+<nav class="dock" aria-label="Acțiuni rapide"><a class="dock__main" data-wa href="#" target="_blank" rel="noopener">WhatsApp · programare</a><a href="#pasaport">Pașaport</a></nav>
+
+<script src="../../shared/petexpert-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

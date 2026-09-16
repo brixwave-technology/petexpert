@@ -62,7 +62,7 @@
   $("#tabs").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; $$("#tabs button").forEach((x) => { x.classList.toggle("is-on", x === b); x.setAttribute("aria-selected", x === b); }); $$(".acc").forEach((a) => a.classList.toggle("is-on", a.id === b.dataset.id)); });
   document.addEventListener("click", (e) => { const b = e.target.closest(".ai button"); if (b) { const o = b.parentElement.classList.toggle("is-open"); b.setAttribute("aria-expanded", o); } });
 
-  U.bindPlaceholders("#dff1ff", "#7cc4ff", "#0f2f5c");
+  U.bindPlaceholders("#f4ead8", "#9ccbc6", "#3f2a18");
 
   /* reveals */
   const io = new IntersectionObserver((es) => es.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); } }), { threshold: 0.1 });
@@ -76,7 +76,7 @@
   const rnd = (a, b) => a + Math.random() * (b - a);
   const mk = (y) => ({ x: rnd(0, W), y: y == null ? rnd(0, H) : y, r: rnd(5, 26), v: rnd(0.25, 0.9), w: rnd(0.6, 1.6), p: rnd(0, Math.PI * 2), a: rnd(0.35, 0.8) });
   const resize = () => { const dpr = Math.min(2, devicePixelRatio || 1); W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + "px"; cv.style.height = H + "px"; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); bubbles = Array.from({ length: N() }, () => mk()); };
-  const drawBubble = (b, r, alpha) => { ctx.beginPath(); ctx.arc(b.x, b.y, r, 0, Math.PI * 2); const g = ctx.createRadialGradient(b.x - r * .35, b.y - r * .35, r * .1, b.x, b.y, r); g.addColorStop(0, `rgba(255,255,255,${.9 * alpha})`); g.addColorStop(.6, `rgba(180,225,255,${.25 * alpha})`); g.addColorStop(1, `rgba(28,95,168,${.35 * alpha})`); ctx.fillStyle = g; ctx.fill(); ctx.lineWidth = 1; ctx.strokeStyle = `rgba(28,95,168,${.35 * alpha})`; ctx.stroke(); };
+  const drawBubble = (b, r, alpha) => { ctx.beginPath(); ctx.arc(b.x, b.y, r, 0, Math.PI * 2); const g = ctx.createRadialGradient(b.x - r * .35, b.y - r * .35, r * .1, b.x, b.y, r); g.addColorStop(0, `rgba(255,255,255,${.9 * alpha})`); g.addColorStop(.6, `rgba(220,240,238,${.25 * alpha})`); g.addColorStop(1, `rgba(107,74,46,${.28 * alpha})`); ctx.fillStyle = g; ctx.fill(); ctx.lineWidth = 1; ctx.strokeStyle = `rgba(107,74,46,${.3 * alpha})`; ctx.stroke(); };
   let last = performance.now();
   const loop = (t) => {
     const dt = Math.min(40, t - last) / 16.7; last = t;

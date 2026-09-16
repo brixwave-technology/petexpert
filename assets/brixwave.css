@@ -180,3 +180,7 @@ section{padding:clamp(56px,8vw,110px) var(--pad)}
   .modal{align-items:end;padding:0}
   .modal__card{border-radius:24px 24px 0 0;max-height:92vh;padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 }
+
+/* 6 designs: two rows of three, and a wider comparison table */
+@media (min-width:1001px){.cards{grid-template-columns:repeat(3,1fr)}}
+.tbl{min-width:1080px}
