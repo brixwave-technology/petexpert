@@ -3,11 +3,11 @@ const BRIXWAVE = {
   name: "Brixwave",
   email: "brixwavetechnology@gmail.com",   // unde ajunge confirmarea clientului
   whatsapp: "",                            // ex: "407xxxxxxxx" (doar cifre). Gol → butonul WhatsApp e ascuns
-  client: "PetExpert (petexpert.md)",
+  client: "Pet Expert (petexpert.md)",
   includes: [
-    "Designul ales, personalizat cu fotografiile, produsele/serviciile și datele reale PetExpert",
-    "Toate secțiunile de prezentare, adaptate activității PetExpert",
-    "Contact rapid prin WhatsApp/telefon, cu mesaj precompletat",
+    "Designul ales, personalizat cu fotografiile reale de pe Instagram, serviciile și prețurile salonului",
+    "Toate secțiunile: servicii, estimator de preț, lucrări, echipă, păreri, întrebări frecvente, contact",
+    "Programare rapidă prin WhatsApp, Viber și telefon, cu mesaj precompletat",
     "Mobile first: gândit pentru telefon, apoi adaptat la tabletă și desktop",
     "Animații și micro‑interacțiuni moderne, optimizate pentru performanță",
     "Optimizare SEO de bază (titluri, descrieri, viteză, accesibilitate)",
@@ -23,7 +23,39 @@ const BRIXWAVE = {
 };
 
 const DESIGNS = [
-  /* se completează după primirea datelor PetExpert */
+  {
+    id: "play",
+    name: "Play",
+    vibe: "Jucăuș · cald · ca o aplicație",
+    path: "designs/01-play/index.html",
+    desc: "Gândit pentru telefon ca o aplicație: bară de acțiuni fixă jos (WhatsApp, Sună, Preț), servicii pe segmente Câini / Pisici / Iepuri cu fișă în bottom‑sheet și un estimator de preț: alegi animalul, talia, blana și serviciul, vezi prețul și durata, iar cererea de programare pleacă precompletată pe WhatsApp.",
+    tags: ["Baloo 2", "Coral & muștar", "Estimator preț", "Bottom-sheet"],
+    swatches: ["#fff7ee", "#ff6b47", "#1f6f78"],
+    motion: 3, warmth: 5, density: 4,
+    audience: "Stăpâni care vor să afle rapid cât costă și să se programeze de pe telefon",
+  },
+  {
+    id: "studio",
+    name: "Studio",
+    vibe: "Editorial · piatră & teracotă · revistă",
+    path: "designs/02-studio/index.html",
+    desc: "Copertă de revistă pentru un grooming studio: titlu uriaș „Tuns. Spălat. Iubit.”, fotografii cu arcade, tonuri de piatră și teracotă, DM Serif. Galerie tip colaj, carduri care se înclină la hover, sticker rotativ. Calm, premium, cu bară de acțiuni pe telefon.",
+    tags: ["DM Serif Display", "Piatră & teracotă", "Grid colaj", "Sticker rotativ"],
+    swatches: ["#f4efe7", "#c2603d", "#1c1b19"],
+    motion: 3, warmth: 4, density: 3,
+    audience: "Un salon care vrea să pară boutique, cu aer de revistă",
+  },
+  {
+    id: "neon",
+    name: "Neon",
+    vibe: "Întunecat · navy & lime · energic",
+    path: "designs/03-neon/index.html",
+    desc: "Navy profund și un singur accent lime, tipografie Unbounded. Preloader cu numărătoare, „Expert” uriaș care intră literă cu literă, spotlight după cursor, serviciile ca carduri care se așază unul peste altul la scroll, citat care se aprinde cuvânt cu cuvânt, CTA gigantic la final.",
+    tags: ["Unbounded", "Navy & lime", "Sticky stack", "Spotlight"],
+    swatches: ["#0b1020", "#c6f24d", "#eef1ff"],
+    motion: 5, warmth: 2, density: 3,
+    audience: "Brand tânăr, îndrăzneț, activ pe Instagram",
+  },
 ];
 
 /* ================================================================== */

@@ -13,4 +13,9 @@ shared/                    ← date comune + fotografii
 .github/workflows/pages.yml← publicare automată pe GitHub Pages (Settings → Pages → GitHub Actions)
 ```
 
-Status: schelet inițial. Design-urile și conținutul se construiesc după primirea datelor PetExpert.
+Design-uri: `01-play` (mobile-first, estimator de preț), `02-studio` (editorial), `03-neon` (întunecat, energic).
+Datele salonului (servicii, prețuri orientative, program, contact, FAQ) sunt în `shared/petexpert-data.js`;
+ilustrațiile demonstrative se generează cu `python3 scripts/generate-photos.py` și se înlocuiesc cu poze reale
+păstrând numele fișierelor din `shared/photos/`.
+
+Publicare: **Settings → Pages → Source: GitHub Actions** → https://brixwave-technology.github.io/petexpert/
